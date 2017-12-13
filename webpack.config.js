@@ -3,12 +3,11 @@ var path = require('path');
 
 var isProduction = process.argv.indexOf('-p') >= 0;
 var sourcePath = path.join(__dirname, './src');
-var outPath = path.join(__dirname, './public');
+var outPath = path.join(__dirname, './dist');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-var path = require('path');
 
 module.exports = {
   context: sourcePath,
