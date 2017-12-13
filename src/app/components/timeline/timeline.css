@@ -1,0 +1,8 @@
+.timeline {
+    border-left-width: 5px;
+    border-left-style: solid;
+    padding-left: 25px;
+    position: relative;
+    border-color: #ebebeb;
+    margin: 0 150px;
+}

@@ -1,0 +1,9 @@
+:root {
+    --header-height: 50px;
+    --icon-height: 47px;
+    --custom-icon-height: 42px;
+    --custom-icon-width: 75px;
+    --base-color: #ff6354;
+    --welcome-color: #555;
+    --welcome-color-alternative: #fff;
+}

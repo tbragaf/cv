@@ -1,0 +1,31 @@
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills .skill-item .skill-name {
+    margin-bottom: 20px;
+}
+
+.progress {
+    border-radius: 0;
+    height: 5px;
+    margin-bottom: 20px;
+    background-color: #ebebeb30;
+}
+
+.progress .progress-bar {
+    background-color: var(--base-color);
+    height: 5px;
+}
+
+.progress .progress-bar.progress-value-10 { width: 10%; }
+.progress .progress-bar.progress-value-20 { width: 20%; }
+.progress .progress-bar.progress-value-30 { width: 30%; }
+.progress .progress-bar.progress-value-40 { width: 40%; }
+.progress .progress-bar.progress-value-50 { width: 50%; }
+.progress .progress-bar.progress-value-60 { width: 60%; }
+.progress .progress-bar.progress-value-70 { width: 70%; }
+.progress .progress-bar.progress-value-80 { width: 80%; }
+.progress .progress-bar.progress-value-90 { width: 90%; }
+.progress .progress-bar.progress-value-100 { width: 100%; }

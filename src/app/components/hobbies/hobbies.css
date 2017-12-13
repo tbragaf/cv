@@ -1,0 +1,56 @@
+#page-hobbies {
+    text-align: center;
+}
+#page-hobbies .hobbies-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+#page-hobbies .hobbies-info p {
+    font-size: 1.2em;
+}
+#page-hobbies .hobbies-info .hobby-item {
+    padding: 15px;
+    text-align: center;
+}
+#page-hobbies .hobbies-info .hobby-item i {
+    display: inline-block;
+    line-height: var(--icon-height);
+    font-size: 25px;
+}
+#page-hobbies .hobbies-info .hobby-item h5 {
+    font-weight: 400;
+}
+
+.custom-icon {
+    height: var(--custom-icon-height);
+    width: var(--custom-icon-height);
+}
+
+.fa-gym {
+    background: url('~/assets/img/gym.svg') no-repeat  50% 50%;
+    background-size: cover;
+}
+
+.fa-cook {
+    background: url('~/assets/img/cooking.svg') no-repeat  50% 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.fa-computer {
+    background: url('~/assets/img/computer.svg') no-repeat  50% 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.fa-custom-coffee {
+    background: url('~/assets/img/coffee.svg') no-repeat  50% 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.fa-bow-tie {
+    background: url('~/assets/img/bow-tie.svg') no-repeat  50% 50%;
+    background-size: cover;
+    background-position: center;
+}

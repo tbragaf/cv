@@ -1,0 +1,43 @@
+{
+  "name": "tbragaf.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "tbragaf Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --debug --devtool cheap-module-source-map --output-pathinfo --history-api-fallback --hot --inline --progress --colors --port 3000 --open",
+    "build": "webpack -p --progress --colors"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/classnames": "^2.2.3",
+    "@types/node": "^8.0.57",
+    "@types/react": "^16.0.28",
+    "@types/react-dom": "^16.0.3",
+    "@types/webpack": "^3.8.1",
+    "@types/webpack-env": "^1.13.3",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.2.3",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "react-hot-loader": "^3.1.3",
+    "style-loader": "^0.19.0",
+    "typescript": "^2.6.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "classnames": "^2.2.5",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

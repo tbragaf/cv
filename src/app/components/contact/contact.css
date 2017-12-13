@@ -1,0 +1,20 @@
+#page-contact {
+    background: url('~/assets/img/contact-background.jpg') no-repeat center center !important;
+}
+#page-contact .contact-info p {
+    font-size: 1.2em;
+}
+#page-contact .contact-info .profile-item {
+    text-align: center;
+}
+#page-contact .contact-info .profile-item i {
+    display: block;
+    line-height: 42px;
+    font-size: 25px;
+}
+#page-contact .contact-info .profile-item p {
+    font-weight: 400;
+}
+#page-contact .contact-info .profile-item p a {
+    color: white;
+}
