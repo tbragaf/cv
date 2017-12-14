@@ -1,5 +1,5 @@
 #page-contact {
-    background: url('~/assets/img/contact-background.jpg') no-repeat center center !important;
+    background: url('/assets/img/contact-background.jpg') no-repeat center center !important;
 }
 #page-contact .contact-info p {
     font-size: 1.2em;
