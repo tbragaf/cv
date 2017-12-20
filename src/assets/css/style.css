@@ -5,14 +5,14 @@
 
 @import './variables.css';
 @import './colors/pink.css';
-@import '/app/components/header/header.css';
-@import '/app/components/welcome/welcome.css';
-@import '/app/components/about/about.css';
-@import '/app/components/hobbies/hobbies.css';
-@import '/app/components/skills/skills.css';
-@import '/app/components/timeline/timeline.css';
-@import '/app/components/timeline/timeline-item/timeline-item.css';
-@import '/app/components/contact/contact.css';
+@import '../../app/components/header/header.css';
+@import '../../app/components/welcome/welcome.css';
+@import '../../app/components/about/about.css';
+@import '../../app/components/hobbies/hobbies.css';
+@import '../../app/components/skills/skills.css';
+@import '../../app/components/timeline/timeline.css';
+@import '../../app/components/timeline/timeline-item/timeline-item.css';
+@import '../../app/components/contact/contact.css';
 
 html, body {
     height: 100%;
