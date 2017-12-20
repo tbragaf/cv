@@ -17,11 +17,11 @@ export class About extends React.Component {
                         </div>
                     </div>
                     <div className="col-md-9">
-                        <p className="justify">
+                        <p className="profile-paragraph">
                             I am hard-working, creative, motivated and punctual fellow who loves tech talks and listen to great people. Other than my
                             passion for computers and technology, I also enjoy talking about the universe and about political and economic matters.
                         </p>
-                        <p className="justify">
+                        <p className="profile-paragraph">
                             For the years to come, I look forward to work with
                             the most talented and creative people to team up with and, hopefully, build a software company. Until then, I still
                             have much to learn as there is a long road ahead.

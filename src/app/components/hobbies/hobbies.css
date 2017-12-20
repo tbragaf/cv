@@ -15,7 +15,7 @@
 #page-hobbies .hobbies-info .hobby-item i {
     display: inline-block;
     line-height: var(--icon-height);
-    font-size: 25px;
+    font-size: 2em;
 }
 #page-hobbies .hobbies-info .hobby-item h5 {
     font-weight: 400;

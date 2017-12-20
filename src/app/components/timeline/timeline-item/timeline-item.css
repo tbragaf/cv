@@ -9,34 +9,37 @@
 }
 
 .timeline-item {
-    margin-bottom: 30px;
-    margin-left: 15px;
+    margin: 15px 30px;
     font-size: 1.2em;
-    text-align: justify;
 }
 
 .timeline-date {
     color: #cccccc;
-    font-size: 14px;
+    font-size: 1em;
     margin-bottom: 5px;
 }
 
 .timeline-company {
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 2em;
 }
 
 .timeline-role {
     color: #666666;
+    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
 .timeline-location {
     color: #cccccc;
-    font-size: 12px;
+    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
-.timeline-info {
-    margin-top: 30px;
+.timeline-details {
+    text-align: justify;
+}
+
+.timeline-details-info {
+    padding: 10px 0;
 }

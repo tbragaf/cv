@@ -1,5 +1,8 @@
 #page-contact {
     background: url('/assets/img/contact-background.jpg') no-repeat center center !important;
+    height: 600px;
+    display: flex;
+    align-items: center;
 }
 #page-contact .contact-info p {
     font-size: 1.2em;
@@ -8,9 +11,8 @@
     text-align: center;
 }
 #page-contact .contact-info .profile-item i {
-    display: block;
-    line-height: 42px;
-    font-size: 25px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 #page-contact .contact-info .profile-item p {
     font-weight: 400;

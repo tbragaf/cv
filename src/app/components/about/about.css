@@ -8,8 +8,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#page-profile p {
+#page-profile .profile-paragraph {
     margin: 2em 0 2em 0;
     font-size: 1.15em;
     line-height: 1.75em;
+    text-align: justify !important;
 }

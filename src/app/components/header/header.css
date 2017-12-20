@@ -25,9 +25,7 @@
     padding: 5px;
 }
 #navbar {
-    padding: 0;
-    border: none;
-    height: 1px;
+    
 }
 #navbar li > a {
     text-align: left;

@@ -12,7 +12,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   context: sourcePath,
   entry: {
-    main: ['./index.tsx', './assets/style.css'],
+    main: ['./index.tsx', './assets/css/style.css'],
     vendor: [
       'react',
       'react-dom',

@@ -3,22 +3,23 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
 
-@import './css/variables.css';
-@import './css/colors/pink.css';
-@import '../app/components/header/header.css';
-@import '../app/components/welcome/welcome.css';
-@import '../app/components/about/about.css';
-@import '../app/components/hobbies/hobbies.css';
-@import '../app/components/skills/skills.css';
-@import '../app/components/timeline/timeline.css';
-@import '../app/components/timeline/timeline-item/timeline-item.css';
-@import '../app/components/contact/contact.css';
+@import './variables.css';
+@import './colors/pink.css';
+@import '/app/components/header/header.css';
+@import '/app/components/welcome/welcome.css';
+@import '/app/components/about/about.css';
+@import '/app/components/hobbies/hobbies.css';
+@import '/app/components/skills/skills.css';
+@import '/app/components/timeline/timeline.css';
+@import '/app/components/timeline/timeline-item/timeline-item.css';
+@import '/app/components/contact/contact.css';
 
 html, body {
     height: 100%;
     width: 100%;
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     color: #757575;
+    font-size: var(--font-size);
 }
 #root, .root {
     height: 100%;
@@ -39,18 +40,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
 }
-.justify {
-    text-align: justify !important;
-}
 
 section {
     padding: 75px 0;
 }
 section:nth-of-type(odd) {
-    background: #ffffff;
+    background: var(--section-odd-color);
 }
 section:nth-of-type(even) {
-    background: #f7f7f7;
+    background: var(--section-even-color);
 }
 
 /* ==========================================================================
@@ -81,28 +79,6 @@ section:nth-of-type(even) {
     text-align: center;
     padding: 30px 0;
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-.text-center {
-    text-align: center;
-}
-.centered {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-}
-/* ==========================================================================
-   Responsive Settings
-   ========================================================================== */
 
 @media(max-width:992px) {
     #page-profile .profile {
