@@ -1,0 +1,18 @@
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    .icon {
+        margin: auto;
+        max-height: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    .icon-text {
+        display: inline;
+        margin: 10px auto;
+    }
+}
