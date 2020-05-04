@@ -43,7 +43,7 @@ export const Main = () => {
     return (
         <div className="main-page">
             <Header className="header" name="Tiago Braga" navigationItems={navigationItems} />
-            <Section id="welcome" className="section" title="Tiago Braga Fernanades" subtitle="Software Engineer" isLineVisible={false}>
+            <Section id="welcome" className="section" title="Tiago Braga Fernandes" subtitle="Software Engineer" isLineVisible={false}>
                 <div className="welcome">
                     <a href="https://pt.linkedin.com/in/tbragaf" className="linkedin">
                         <div hidden>linkedin</div>
