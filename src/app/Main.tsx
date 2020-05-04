@@ -65,7 +65,7 @@ export const Main = () => {
                     </div>
                 </div>
             </Section>
-            <Section id="hobbies" className="section" title="Things I like to do">
+            <Section id="hobbies" className="section" title="Things I like">
                 <div className="hobbies">
                     <Icon icon={usersIcon} text="Friends" />
                     <Icon icon={gymIcon} text="Working out" />
