@@ -85,7 +85,7 @@ export const Main = () => {
             <Section id="skills" className="section" title="Skills">
                 <div className="skills">
                     <Progress valueInPercentage="100%" description="Teamwork" />
-                    <Progress valueInPercentage="80%" description="Design patterns" />
+                    <Progress valueInPercentage="90%" description="Design patterns" />
                     <Progress valueInPercentage="95%" description="Empathy" />
                     <Progress valueInPercentage="85%" description="Object oriented programming" />
                     <Progress valueInPercentage="85%" description="Web technologies" />
@@ -94,7 +94,8 @@ export const Main = () => {
             </Section>
             <Section id="timeline" className="section" title="Timeline">
                 <Timeline className="timeline">
-                    <TimelineItem date="2020-Present" company="OutSystems" role="Senior Software Engineer" description={<div>In 2020, I jumped to a more senior role at Mac IDE team. I worked on a cross platform Drag&Drop mechanism and continued with the migration of our technology stack.</div>} />
+                    <TimelineItem date="2022-Present" company="OutSystems" role="Senior Software Engineer" description={<div>In late 2021, at Mac IDE team we launched Service Studio GA version for Mac OS. We then all moved to a new team "O11 IDE Team" to continue the previous work and replace the legacy version for Windows OS.</div>} />
+                    <TimelineItem date="2020-2022" company="OutSystems" role="Senior Software Engineer" description={<div>In 2020, I jumped to a more senior role at Mac IDE team. I worked on a cross platform Drag&Drop mechanism and continued with the migration of our technology stack.</div>} />
                     <TimelineItem date="2019-2020" company="OutSystems" role="Software Engineer" description={<div>I was one of the first members of the Mac IDE team which aims at delivering the IDE our customers love to different operative systems. Part of our work is related with the migration of our technology stack.</div>} />
                     <TimelineItem date="2017-2019" company="OutSystems" role="Software Engineer" description={<div>I've been part of the Collaboration team which aims at increasing teams' productivity and performance with improved collaborative and work sharing capabilities. Part of our work is related with version control and merge capabilities inside the OutSystems platform.</div>} />
                     <TimelineItem date="2017" company="OutSystems" role="Master degree student" description={<div>I've published my master's degree thesis entitled <i>Suporte para Refatorização Automática de Lógica de Negócio baseada em Modelos</i>, November 2017.</div>} />
