@@ -1,0 +1,16 @@
+.icon {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    .source {
+        margin: auto;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .description {
+        display: inline;
+        margin: 10px auto;
+    }
+}

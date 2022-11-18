@@ -1,0 +1,28 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@cv/components": ["libs/components/src/index.ts"],
+            "@cv/components/header": ["libs/components/header/src/index.ts"],
+            "@cv/components/section": ["libs/components/section/src/index.ts"],
+            "@cv/components/social-media-icon": ["libs/components/social-media-icon/src/index.ts"],
+            "@cv/header": ["libs/header/src/index.ts"],
+            "@cv/section": ["libs/section/src/index.ts"],
+            "@cv/social-media-icon": ["libs/social-media-icon/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}
