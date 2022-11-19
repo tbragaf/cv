@@ -112,6 +112,23 @@ h3 {
         }
     }
 
+    .timeline {
+        .timeline-content {
+            margin: 0 auto;
+            width: 800px;
+
+            .link {
+                color: var(--base-color);
+                text-decoration: none;
+
+                &:link,
+                &:visited {
+                    outline: 0;
+                }
+            }
+        }
+    }
+
     //    .contact {
     //         &.section {
     //             background-color: var(--base-color);
