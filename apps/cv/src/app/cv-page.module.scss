@@ -103,12 +103,32 @@ h3 {
         }
     }
 
-    .hobbies,
+    .hobbies .hobbies-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .tools {
-        .hobbies-content,
         .tools-content {
             display: flex;
             justify-content: space-around;
+        }
+
+        .tools-text {
+            margin: 50px auto 0 auto;
+            font-size: 1.2em;
+            width: 800px;
+
+            .inline-icon {
+                display: inline;
+                padding: 0;
+
+                img {
+                    // TODO: ouch, we should not be accessing internal content. Configure with props instead
+                    max-height: 20px;
+                    max-width: 20px;
+                }
+            }
         }
     }
 
@@ -116,48 +136,14 @@ h3 {
         .timeline-content {
             margin: 0 auto;
             width: 800px;
-
-            .link {
-                color: var(--base-color);
-                text-decoration: none;
-
-                &:link,
-                &:visited {
-                    outline: 0;
-                }
-            }
         }
     }
 
-    //    .contact {
-    //         &.section {
-    //             background-color: var(--base-color);
-    //             // background: url("/assets/contact-background.jpg") no-repeat 50%;
+    .contact {
+        background-color: var(--base-color);
 
-    //             .icon-wrapper {
-    //                 padding: 100px 100px 0 100px;
-    //             }
-    //         }
-    //     }
-
-    //     .skills {
-    //         display: grid;
-    //         grid-template-columns: 500px 500px;
-    //         justify-content: space-around;
-    //     }
-
-    //     .timeline {
-    //         margin: 0 auto;
-    //         width: 800px;
-
-    //         .link {
-    //             color: var(--base-color);
-    //             text-decoration: none;
-
-    //             &:link,
-    //             &:visited {
-    //                 outline: 0;
-    //             }
-    //         }
-    //     }
+        .contact-content {
+            display: flex;
+        }
+    }
 }

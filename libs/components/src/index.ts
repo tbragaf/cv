@@ -1,3 +1,4 @@
+export * from "./lib/link/link";
 export * from "./lib/timeline/timeline";
 export * from "./lib/timeline/timeline-item";
 export * from "./lib/icon/icon";

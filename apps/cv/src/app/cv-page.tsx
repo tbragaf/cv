@@ -1,5 +1,5 @@
 import styles from "./cv-page.module.scss";
-import { Header, Section, SocialMediaIcon, INavigationItem, Icon, Timeline, TimelineItem } from "@cv/components";
+import { Header, Section, SocialMediaIcon, INavigationItem, Icon, Timeline, TimelineItem, Link } from "@cv/components";
 
 export const CVPage = () => {
     const navigationItems: INavigationItem[] = [
@@ -12,12 +12,8 @@ export const CVPage = () => {
             text: "Hobbies"
         },
         {
-            targetElementId: "about-cv",
+            targetElementId: "tools",
             text: "About this CV"
-        },
-        {
-            targetElementId: "skills",
-            text: "Skills"
         },
         {
             targetElementId: "timeline",
@@ -74,12 +70,26 @@ export const CVPage = () => {
                 </div>
             </Section>
             <Section id="tools" className={styles["tools"]} title="What I used for this website">
-                <div className={styles["tools-content"]}>
-                    <Icon source="/assets/react.png" description="React" />
-                    <Icon source="/assets/typescript.png" description="Typescript" />
-                    <Icon source="/assets/nx.png" description="Nx" />
-                    <Icon source="/assets/sass.png" description="Sass" />
-                </div>
+                <>
+                    <div className={styles["tools-content"]}>
+                        <Icon source="/assets/react.png" description="React" />
+                        <Icon source="/assets/typescript.png" description="Typescript" />
+                        <Icon source="/assets/nx.png" description="Nx" />
+                        <Icon source="/assets/sass.png" description="Sass" />
+                    </div>
+                    <div className={styles["tools-text"]}>
+                        <p>
+                            This website is one of those 2 birds 1 stone{" "}
+                            <Icon source="/assets/sweat-smile.png" className={styles["inline-icon"]} />. I'm using it to
+                            display my portfolio, while learning new things.
+                        </p>
+                        <p>
+                            As of November 2022, I'm learning <Link text="nx.dev" href="https://nx.dev/" /> to help
+                            generate code and the project structure. I also used it to learn how to host pages in{" "}
+                            <Link text="github pages" href="https://pages.github.com/" />.
+                        </p>
+                    </div>
+                </>
             </Section>
             <Section id="timeline" className={styles["timeline"]} title="What I've been doing">
                 <div className={styles["timeline-content"]}>
@@ -89,9 +99,11 @@ export const CVPage = () => {
                             company="OutSystems"
                             role="Lead Software Engineer"
                             description={
-                                <div>
-                                    In late 2022, I moved to a new group while still working on the OutSystems IDE. I
-                                </div>
+                                <p>
+                                    In late 2022, I moved to a new team within while still working on the OutSystems
+                                    IDE. As of today (November 2022), I can only say that new and amazing things are
+                                    comming to OutSystems, so don't miss it.
+                                </p>
                             }
                         />
                         <TimelineItem
@@ -99,18 +111,18 @@ export const CVPage = () => {
                             company="OutSystems"
                             role="Senior Software Engineer"
                             description={
-                                <div>
+                                <>
                                     <p>
-                                        In 2020, I jumped to a more senior role at Mac IDE team. I worked on a cross
-                                        platform Drag&Drop mechanism and continued with the migration of our technology
-                                        stack.
+                                        In 2020, I start working at a more senior role at <i>Mac IDE</i> team. This
+                                        promotion got me working on the cross platform Drag&Drop mechanism for the IDE
+                                        while continuing working on the migration of our technology stack.
                                     </p>
                                     <p>
-                                        In late 2021, at Mac IDE team we launched Service Studio GA version for Mac OS.
-                                        We then all moved to a new team "O11 IDE Team" to continue the previous work and
-                                        replace the legacy version for Windows OS.
+                                        In late 2021, at <i>Mac IDE</i> team we launched Service Studio GA version for
+                                        Mac OS. We then all moved to a new team <i>O11 IDE</i> team to continue the
+                                        previous work and replace the legacy version for Windows OS.
                                     </p>
-                                </div>
+                                </>
                             }
                         />
                         <TimelineItem
@@ -118,11 +130,11 @@ export const CVPage = () => {
                             company="OutSystems"
                             role="Software Engineer"
                             description={
-                                <div>
+                                <p>
                                     I was one of the first members of the Mac IDE team which aims at delivering the IDE
                                     our customers love to different operative systems. Part of our work is related with
                                     the migration of our technology stack.
-                                </div>
+                                </p>
                             }
                         />
                         <TimelineItem
@@ -130,12 +142,12 @@ export const CVPage = () => {
                             company="OutSystems"
                             role="Software Engineer"
                             description={
-                                <div>
+                                <p>
                                     I've been part of the Collaboration team which aims at increasing teams'
                                     productivity and performance with improved collaborative and work sharing
                                     capabilities. Part of our work is related with version control and merge
                                     capabilities inside the OutSystems platform.
-                                </div>
+                                </p>
                             }
                         />
                         <TimelineItem
@@ -144,61 +156,26 @@ export const CVPage = () => {
                             role="Master degree student"
                             description={
                                 <>
-                                    <div>
+                                    <p>
                                         I've published my master's degree thesis entitled{" "}
                                         <i>
                                             Suporte para Refatorização Automática de Lógica de Negócio baseada em
                                             Modelos
                                         </i>
-                                        , November 2017.
-                                        <p>
-                                            More information about the thesis can be found{" "}
-                                            <a className={styles["link"]} href="https://hdl.handle.net/1822/79855/">
-                                                here
-                                            </a>
-                                            .
-                                        </p>
-                                    </div>
-                                    <div>
+                                        , November 2017. More information about the thesis can be found{" "}
+                                        <Link text="here" href="https://hdl.handle.net/1822/79855/" />.
+                                    </p>
+                                    <p>
                                         At the same time, OutSystems challenged me to publish an article on the same
                                         topic entitled <i>Support for Automatic Refactoring of Business Logic</i> which
                                         was accepted as regular paper to appear in the proceedings of the{" "}
-                                        <a className={styles["link"]} href="http://inforum.org.pt/INForum2017">
-                                            9th National Informatics Symposium
-                                        </a>
+                                        <Link
+                                            text="9th National Informatics Symposium"
+                                            href="http://inforum.org.pt/INForum2017"
+                                        />
                                         , October 2017.
-                                    </div>
-                                </>
-                            }
-                        />
-                        <TimelineItem
-                            date="2015-2017"
-                            company="University of Minho"
-                            role="Master degree student"
-                            description={
-                                <div>
-                                    My master's degree started in 2014 and ended in 2017. At the same time I started my
-                                    professional career. My master's degree was focused on{" "}
-                                    <a
-                                        className={styles["link"]}
-                                        href="http://www4.di.uminho.pt/~rcm/mestrados/mei/EN/EA.html">
-                                        Applications Engineering
-                                    </a>{" "}
-                                    and{" "}
-                                    <a
-                                        className={styles["link"]}
-                                        href="http://www4.di.uminho.pt/~rcm/mestrados/mei/EN/BI.html">
-                                        Business Intelligence
-                                    </a>
-                                    . <p></p>{" "}
-                                    <p>
-                                        More information about the course can be found{" "}
-                                        <a className={styles["link"]} href="http://mei.di.uminho.pt/">
-                                            here
-                                        </a>
-                                        .
                                     </p>
-                                </div>
+                                </>
                             }
                         />
                         <TimelineItem
@@ -206,32 +183,50 @@ export const CVPage = () => {
                             company="Wintouch"
                             role="Software Engineer"
                             description={
-                                <div>
+                                <p>
                                     I've been part of the core team of the developmente of a SAAS product, to be
                                     released at the end of 2016. I've developed RESTful web services since April of 2015
                                     (C#) and web component based applications (Angular2)."
-                                </div>
+                                </p>
                             }
                         />
                         <TimelineItem
-                            date="2011-2014"
+                            date="2011-2017"
                             company="University of Minho"
-                            role="Licentiate's degree student"
+                            role="Licentiate and master degree"
                             description={
-                                <div>
-                                    My Licenciate's degree started in 2011 and ended 3 years later. After that I started
-                                    my master's degree as well as my professional career. <p></p>{" "}
+                                <>
                                     <p>
-                                        More information about the course can be found{" "}
-                                        <a className={styles["link"]} href="http://lei.di.uminho.pt/">
-                                            here
-                                        </a>
-                                        .
+                                        My licenciate's degree started in 2011 and ended 3 years later. After that I
+                                        started my master's degree as well as my professional career. More information
+                                        about the course can be found{" "}
+                                        <Link text="here" href="http://lei.di.uminho.pt/" />.
                                     </p>
-                                </div>
+                                    <p>
+                                        My master's degree started in 2014 and ended in 2017. At the same time I started
+                                        my professional career at Wintouch. My master's degree was focused on{" "}
+                                        <Link
+                                            text="Applications Engineering"
+                                            href="http://www4.di.uminho.pt/~rcm/mestrados/mei/EN/EA.html"
+                                        />{" "}
+                                        and{" "}
+                                        <Link
+                                            text="Business Intelligence"
+                                            href="http://www4.di.uminho.pt/~rcm/mestrados/mei/EN/BI.html"
+                                        />
+                                        . More information about the course can be found{" "}
+                                        <Link text="here" href="http://mei.di.uminho.pt/" />.
+                                    </p>
+                                </>
                             }
                         />
                     </Timeline>
+                </div>
+            </Section>
+            <Section id="contact" className={styles["contact"]} title="Contact me" subtitle="Get in touch">
+                <div className={styles["contact-content"]}>
+                    <Icon source="/assets/envelope.svg" description="braga.tiago.93@gmail.com" />
+                    <Icon source="/assets/location.svg" description="Braga, Portugal" />
                 </div>
             </Section>
         </div>
