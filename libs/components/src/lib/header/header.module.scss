@@ -1,23 +1,25 @@
 .navbar {
-    padding: 15px;
     display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
+    padding: 15px;
 
     .name {
         color: var(--header-color);
         cursor: default;
+        padding: 5px 10px;
+        text-transform: uppercase;
     }
 
     .navigation-items {
+        display: flex;
         font-weight: 700;
+        flex-grow: 1;
         list-style: none;
+        justify-content: flex-end;
         margin: 0;
         padding: 0;
 
         .navigation-item {
-            display: inline;
-            padding: 15px;
+            padding: 5px 10px;
 
             .navigation-link {
                 color: var(--header-color);

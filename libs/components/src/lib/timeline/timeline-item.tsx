@@ -13,8 +13,8 @@ export const TimelineItem = ({ date, company, role, description }: ITimelineItem
             <div className={styles["point"]} />
             <div className={styles["info"]}>
                 <p className={styles["date"]}>{date}</p>
-                <h2 className={styles["company"]}>{company}</h2>
-                <p className={styles["role"]}>{role}</p>
+                <h2 className={styles["role"]}>{role}</h2>
+                <span className={styles["company"]}>{company}</span>
             </div>
             <div className={styles["description"]}>{description}</div>
         </div>

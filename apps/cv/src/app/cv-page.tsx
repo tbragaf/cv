@@ -91,6 +91,10 @@ export const CVPage = () => {
                             generate code and the project structure. I also used it to learn how to host pages in{" "}
                             <Link text="github pages" href="https://pages.github.com/" />.
                         </p>
+                        <p>
+                            If you want to know more about the code behind this page, please follow the{" "}
+                            <Link text="github page" href="https://github.com/tbragaf/cv/tree/development/" />.
+                        </p>
                     </div>
                 </>
             </Section>
@@ -152,35 +156,6 @@ export const CVPage = () => {
                             }
                         />
                         <TimelineItem
-                            date="2017"
-                            company="University of Minho"
-                            role="Master degree student"
-                            description={
-                                <>
-                                    <p>
-                                        I joined OutSystems as a student and published my master's degree thesis
-                                        entitled{" "}
-                                        <i>
-                                            Suporte para Refatorização Automática de Lógica de Negócio baseada em
-                                            Modelos
-                                        </i>
-                                        , November 2017. More information about the thesis can be found{" "}
-                                        <Link text="here" href="https://hdl.handle.net/1822/79855/" />.
-                                    </p>
-                                    <p>
-                                        At the same time, OutSystems challenged me to publish an article on the same
-                                        topic entitled <i>Support for Automatic Refactoring of Business Logic</i> which
-                                        was accepted as regular paper to appear in the proceedings of the{" "}
-                                        <Link
-                                            text="9th National Informatics Symposium"
-                                            href="http://inforum.org.pt/INForum2017"
-                                        />
-                                        , October 2017.
-                                    </p>
-                                </>
-                            }
-                        />
-                        <TimelineItem
                             date="2014-2016"
                             company="Wintouch"
                             role="Software Engineer"
@@ -218,6 +193,25 @@ export const CVPage = () => {
                                         />
                                         . More information about the course can be found{" "}
                                         <Link text="here" href="http://mei.di.uminho.pt/" />.
+                                    </p>
+                                    <p>
+                                        I joined OutSystems as a student for my master's thesis and the
+                                        <i>
+                                            Suporte para Refatorização Automática de Lógica de Negócio baseada em
+                                            Modelos
+                                        </i>
+                                        artciel in November 2017. More information about the thesis can be found{" "}
+                                        <Link text="here" href="https://hdl.handle.net/1822/79855/" />.
+                                    </p>
+                                    <p>
+                                        At the same time, OutSystems challenged me to publish an article on the same
+                                        topic entitled <i>Support for Automatic Refactoring of Business Logic</i> which
+                                        was accepted as regular paper to appear in the proceedings of the{" "}
+                                        <Link
+                                            text="9th National Informatics Symposium"
+                                            href="http://inforum.org.pt/INForum2017"
+                                        />
+                                        , October 2017.
                                     </p>
                                 </>
                             }

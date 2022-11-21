@@ -1,5 +1,11 @@
 .section {
-    padding: 75px 200px;
+    padding: 50px 150px;
+
+    @media only screen and (max-width: 1000px) {
+        & {
+            padding: 50px;
+        }
+    }
 
     .title {
         color: var(--title-color);
@@ -15,6 +21,7 @@
         height: 2px;
         margin: auto;
         width: 100px;
+        margin-bottom: 20px;
     }
 
     .subtitle {

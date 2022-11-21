@@ -1,5 +1,6 @@
 .timeline-item {
     display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     position: relative;
 
@@ -19,25 +20,22 @@
     }
 
     .info {
-        min-width: 250px;
-        max-width: 250px;
-
         .company {
-            margin: 0 0 5px 0;
+            color: #cccccc;
         }
 
-        .date,
-        .role {
+        .date {
             color: #cccccc;
             font-size: 1em;
             margin: 0;
         }
 
-        .company {
+        .role {
+            margin: 0;
         }
 
         .role {
-            color: #cccccc;
+            padding: 10px 0;
         }
     }
 
