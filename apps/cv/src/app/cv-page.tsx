@@ -132,38 +132,34 @@ export const CVPage = () => {
                             }
                         />
                         <TimelineItem
-                            date="2019-2020"
+                            date="2017-2020"
                             company="OutSystems"
                             role="Software Engineer"
                             description={
-                                <p>
-                                    I was one of the first members of the Mac IDE team which aims at delivering the IDE
-                                    our customers love to different operative systems. Part of our work is related with
-                                    the migration of our technology stack.
-                                </p>
-                            }
-                        />
-                        <TimelineItem
-                            date="2017-2019"
-                            company="OutSystems"
-                            role="Software Engineer"
-                            description={
-                                <p>
-                                    I've been part of the Collaboration team which aims at increasing teams'
-                                    productivity and performance with improved collaborative and work sharing
-                                    capabilities. Part of our work is related with version control and merge
-                                    capabilities inside the OutSystems platform.
-                                </p>
+                                <>
+                                    <p>
+                                        Starting in 2017, I've been part of the Collaboration team which aims at
+                                        increasing teams' productivity and performance with improved collaborative and
+                                        work sharing capabilities. Part of our work is related with version control and
+                                        merge capabilities inside the OutSystems platform.
+                                    </p>
+                                    <p>
+                                        Later in 2019, I was one of the first members of the Mac IDE team which aims at
+                                        delivering the IDE our customers love to different operative systems. Part of
+                                        our work is related with the migration of our technology stack.
+                                    </p>
+                                </>
                             }
                         />
                         <TimelineItem
                             date="2017"
-                            company="OutSystems"
+                            company="University of Minho"
                             role="Master degree student"
                             description={
                                 <>
                                     <p>
-                                        I've published my master's degree thesis entitled{" "}
+                                        I joined OutSystems as a student and published my master's degree thesis
+                                        entitled{" "}
                                         <i>
                                             Suporte para Refatorização Automática de Lógica de Negócio baseada em
                                             Modelos
