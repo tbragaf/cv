@@ -3,7 +3,7 @@
 
 :root {
     --font-size: 14px;
-    --base-color: #ff6354;
+    --base-color: #108b94;
     --header-color: #777777;
     --title-color: #555555;
     --text-color: #757575;
@@ -70,14 +70,6 @@ h3 {
         height: 100vh;
         justify-content: center;
         padding: 0;
-
-        // .title {
-        //     color: var(--secondary-text-color);
-        // }
-
-        // .spacer {
-        //     background: var(--secondary-text-color);
-        // }
     }
 
     .about {
@@ -140,7 +132,7 @@ h3 {
     }
 
     .contact {
-        background-color: var(--base-color);
+        background-color: #26c5d1;
 
         .contact-content {
             display: flex;
