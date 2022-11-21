@@ -1,0 +1,33 @@
+.section {
+    padding: 50px 150px;
+
+    @media only screen and (max-width: 1000px) {
+        & {
+            padding: 50px;
+        }
+    }
+
+    .title {
+        color: var(--title-color);
+        letter-spacing: 5px;
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .spacer {
+        background: var(--base-color);
+        height: 2px;
+        margin: auto;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        margin: 0;
+        padding: 30px 0;
+        text-align: center;
+    }
+}

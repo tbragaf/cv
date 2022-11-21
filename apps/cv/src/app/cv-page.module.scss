@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+
+:root {
+    --font-size: 14px;
+    --base-color: #108b94;
+    --header-color: #777777;
+    --title-color: #555555;
+    --text-color: #757575;
+    --secondary-text-color: #ffffff;
+    --section-odd-color: #ffffff;
+    --section-even-color: #f7f7f7;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.cv-page {
+    .header {
+        background-color: rgba(255, 255, 255, 0.7);
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .cv-section:nth-of-type(even) {
+        background: var(--section-even-color);
+    }
+
+    .cv-section:nth-of-type(odd) {
+        background: var(--section-odd-color);
+    }
+
+    .welcome,
+    .contact {
+        align-items: center;
+        color: var(--secondary-text-color);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .about {
+        .about-content {
+            display: flex;
+
+            @media only screen and (max-width: 1000px) {
+                & {
+                    flex-direction: column;
+
+                    .about-image {
+                        margin: 0 auto 50px auto;
+                    }
+
+                    .about-text {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .about-image {
+            border: 2px solid #555555;
+            max-height: 225px;
+            max-width: 225px;
+            min-height: 225px;
+            min-width: 225px;
+            transform: scaleX(-1);
+        }
+
+        .about-text {
+            font-size: 1.15em;
+            line-height: 1.75em;
+            padding-left: 50px;
+            text-align: justify;
+        }
+    }
+
+    .hobbies .hobbies-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tools {
+        .tools-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tools-text {
+            margin: 50px auto 0 auto;
+            font-size: 1.2em;
+
+            .inline-icon {
+                display: inline;
+                padding: 0;
+
+                img {
+                    // TODO: ouch, we should not be accessing internal content. Configure with props instead
+                    max-height: 20px;
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+
+    .timeline {
+        .timeline-content {
+            margin: 0 auto;
+        }
+    }
+
+    .contact {
+        background-color: var(--base-color) !important;
+
+        h2 {
+            // TODO: ouch, we should not be accessing internal content. Configure with props instead
+            color: white;
+        }
+
+        .contact-content {
+            display: flex;
+        }
+    }
+}
