@@ -24,7 +24,7 @@ export const Section = ({
             <header>
                 <h2 className={styles["title"]}>{title}</h2>
                 {isTitleSeparatorVisible && <div className={styles["spacer"]} />}
-                <h3 className={styles["subtitle"]}>{subtitle}</h3>
+                {subtitle && <h3 className={styles["subtitle"]}>{subtitle}</h3>}
             </header>
             <div>{children}</div>
         </section>

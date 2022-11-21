@@ -8,9 +8,9 @@ export interface IIconProps {
 
 export const Icon = ({ source, description, className }: IIconProps) => {
     return (
-        <div className={`${className} ${styles["icon"]}`}>
+        <span className={`${className} ${styles["icon"]}`}>
             <img src={source} className={styles["source"]} alt="" />
             <span className={styles["description"]}>{description}</span>
-        </div>
+        </span>
     );
 };

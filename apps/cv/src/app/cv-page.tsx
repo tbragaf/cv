@@ -26,12 +26,12 @@ export const CVPage = () => {
     ];
 
     return (
-        <div className={styles["cv"]}>
+        <div className={styles["cv-page"]}>
             <Header className={styles["header"]} name="Tiago Braga Fernandes" navigationItems={navigationItems} />
             <Section
                 id="welcome"
                 style={{ background: "url(/assets/welcome-background.jpg) no-repeat 50%", backgroundSize: "cover" }}
-                className={styles["welcome"]}
+                className={`${styles["cv-section"]} ${styles["welcome"]}`}
                 title="Tiago Braga Fernandes"
                 subtitle="Software Engineer"
                 isTitleSeparatorVisible={false}>
@@ -43,7 +43,7 @@ export const CVPage = () => {
             </Section>
             <Section
                 id="about"
-                className={styles["about"]}
+                className={`${styles["cv-section"]} ${styles["about"]}`}
                 title="About me"
                 subtitle="Full-time learner and eager to leave my mark">
                 <div className={styles["about-content"]}>
@@ -61,7 +61,7 @@ export const CVPage = () => {
                     </div>
                 </div>
             </Section>
-            <Section id="hobbies" className={styles["hobbies"]} title="Things I like">
+            <Section id="hobbies" className={`${styles["cv-section"]} ${styles["hobbies"]}`} title="Things I like">
                 <div className={styles["hobbies-content"]}>
                     <Icon source="/assets/users.svg" description="Friends" />
                     <Icon source="/assets/gym.svg" description="Working out" />
@@ -69,7 +69,10 @@ export const CVPage = () => {
                     <Icon source="/assets/beers.svg" description="Have a beer" />
                 </div>
             </Section>
-            <Section id="tools" className={styles["tools"]} title="What I used for this website">
+            <Section
+                id="tools"
+                className={`${styles["cv-section"]} ${styles["tools"]}`}
+                title="What I used for this website">
                 <>
                     <div className={styles["tools-content"]}>
                         <Icon source="/assets/react.png" description="React" />
@@ -91,7 +94,10 @@ export const CVPage = () => {
                     </div>
                 </>
             </Section>
-            <Section id="timeline" className={styles["timeline"]} title="What I've been doing">
+            <Section
+                id="timeline"
+                className={`${styles["cv-section"]} ${styles["timeline"]}`}
+                title="What I've been doing">
                 <div className={styles["timeline-content"]}>
                     <Timeline className="timeline">
                         <TimelineItem
@@ -223,7 +229,11 @@ export const CVPage = () => {
                     </Timeline>
                 </div>
             </Section>
-            <Section id="contact" className={styles["contact"]} title="Contact me" subtitle="Get in touch">
+            <Section
+                id="contact"
+                className={`${styles["cv-section"]} ${styles["contact"]}`}
+                title="Get in touch"
+                isTitleSeparatorVisible={false}>
                 <div className={styles["contact-content"]}>
                     <Icon source="/assets/envelope.svg" description="braga.tiago.93@gmail.com" />
                     <Icon source="/assets/location.svg" description="Braga, Portugal" />

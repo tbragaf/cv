@@ -35,30 +35,20 @@ h3 {
     font-size: 1.5em;
 }
 
-.cv {
-    .section:nth-of-type(even) {
-        background: var(--section-odd-color);
-    }
-
-    .section:nth-of-type(odd) {
-        background: var(--section-even-color);
-    }
-
-    .welcome,
-    .hobbies,
-    .about-cv,
-    .contact {
-        //margin-top: 15px;
-        //display: block;
-        //display: flex;
-        justify-content: space-around;
-    }
-
+.cv-page {
     .header {
         background-color: rgba(255, 255, 255, 0.7);
         position: fixed;
         width: 100%;
         z-index: 999;
+    }
+
+    .cv-section:nth-of-type(even) {
+        background: var(--section-even-color);
+    }
+
+    .cv-section:nth-of-type(odd) {
+        background: var(--section-odd-color);
     }
 
     .welcome,
@@ -132,7 +122,12 @@ h3 {
     }
 
     .contact {
-        background-color: #26c5d1;
+        background-color: var(--base-color) !important;
+
+        h2 {
+            // TODO: ouch, we should not be accessing internal content. Configure with props instead
+            color: white;
+        }
 
         .contact-content {
             display: flex;
