@@ -56,7 +56,7 @@ export const CVPage = () => {
                         </p>
                         <p>
                             I thrive to have a nice enviroment to work with and, for the years to come, I look forward
-                            to work with the most talented and creative people to team up with.
+                            to work with the most talented and creative people to team up.
                         </p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ export const CVPage = () => {
                         </p>
                         <p>
                             As of November 2022, I'm learning <Link text="nx.dev" href="https://nx.dev/" /> to help
-                            generate code and the project structure. I also used it to learn how to host pages in{" "}
+                            generate code and the project structure. I also used it to learn how to host websites in{" "}
                             <Link text="github pages" href="https://pages.github.com/" />.
                         </p>
                         <p>
@@ -110,9 +110,9 @@ export const CVPage = () => {
                             role="Lead Software Engineer"
                             description={
                                 <p>
-                                    In late 2022, I moved to a new team within while still working on the OutSystems
-                                    IDE. As of today (November 2022), I can only say that new and amazing things are
-                                    comming to OutSystems, so don't miss it.
+                                    In late 2022, I moved on to a new team while still working on the OutSystems IDE. As
+                                    of today (November 2022), I can only say that new and amazing things are comming to
+                                    OutSystems, so don't miss it.
                                 </p>
                             }
                         />
@@ -123,9 +123,10 @@ export const CVPage = () => {
                             description={
                                 <>
                                     <p>
-                                        In 2020, I start working at a more senior role at <i>Mac IDE</i> team. This
-                                        promotion got me working on the cross platform Drag&Drop mechanism for the IDE
-                                        while continuing working on the migration of our technology stack.
+                                        In 2020, I started working at a more senior role at the <i>Mac IDE</i> team.
+                                        This promotion got me working on the cross platform Drag&Drop mechanism for the
+                                        IDE while I also continued to migrate our legacy technology stack to a more
+                                        recent one.
                                     </p>
                                     <p>
                                         In late 2021, at <i>Mac IDE</i> team we launched Service Studio GA version for
@@ -142,15 +143,14 @@ export const CVPage = () => {
                             description={
                                 <>
                                     <p>
-                                        Starting in 2017, I've been part of the Collaboration team which aims at
+                                        Starting in 2017, I've been part of the <i>Collaboration</i> team which aims at
                                         increasing teams' productivity and performance with improved collaborative and
                                         work sharing capabilities. Part of our work is related with version control and
                                         merge capabilities inside the OutSystems platform.
                                     </p>
                                     <p>
-                                        Later in 2019, I was one of the first members of the Mac IDE team which aims at
-                                        delivering the IDE our customers love to different operative systems. Part of
-                                        our work is related with the migration of our technology stack.
+                                        Later in 2019, I was one of the first members of the Mac IDE team whose aim is
+                                        to deliver a new top-notch IDE using the most recent and promising technologies.
                                     </p>
                                 </>
                             }
@@ -161,9 +161,9 @@ export const CVPage = () => {
                             role="Software Engineer"
                             description={
                                 <p>
-                                    I've been part of the core team of the developmente of a SAAS product, to be
-                                    released at the end of 2016. I've developed RESTful web services since April of 2015
-                                    (C#) and web component based applications (Angular2)."
+                                    I've been part of the core team of the developmente of a SAAS product, released in
+                                    the end of 2016. I've developed RESTful web services since April of 2015 (C#) and
+                                    web component based applications (Angular2)."
                                 </p>
                             }
                         />
