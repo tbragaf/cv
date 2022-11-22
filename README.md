@@ -17,3 +17,4 @@
 5. For some reason, github is not loading assets properly (need to find out why)
 6. Add /cv/ prefix to all "/assets/" references
 7. Add /cv/ prefix to assets inside index.html
+8. Add /cv/ prefix to elementTargetIds inside main.*.js file
