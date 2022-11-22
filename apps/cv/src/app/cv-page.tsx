@@ -63,10 +63,10 @@ export const CVPage = () => {
             </Section>
             <Section id="hobbies" className={`${styles["cv-section"]} ${styles["hobbies"]}`} title="Things I like">
                 <div className={styles["hobbies-content"]}>
-                    <Icon source="/assets/users.svg" description="Friends" />
-                    <Icon source="/assets/gym.svg" description="Working out" />
-                    <Icon source="/assets/cooking.svg" description="Cooking" />
-                    <Icon source="/assets/beers.svg" description="Have a beer" />
+                    <Icon source="/assets/users.svg" description="Friends" className={styles["icon"]} />
+                    <Icon source="/assets/gym.svg" description="Working out" className={styles["icon"]} />
+                    <Icon source="/assets/cooking.svg" description="Cooking" className={styles["icon"]} />
+                    <Icon source="/assets/beers.svg" description="Have a beer" className={styles["icon"]} />
                 </div>
             </Section>
             <Section
@@ -75,10 +75,10 @@ export const CVPage = () => {
                 title="What I used for this website">
                 <>
                     <div className={styles["tools-content"]}>
-                        <Icon source="/assets/react.png" description="React" />
-                        <Icon source="/assets/typescript.png" description="Typescript" />
-                        <Icon source="/assets/nx.png" description="Nx" />
-                        <Icon source="/assets/sass.png" description="Sass" />
+                        <Icon source="/assets/react.png" description="React" className={styles["icon"]} />
+                        <Icon source="/assets/typescript.png" description="Typescript" className={styles["icon"]} />
+                        <Icon source="/assets/nx.png" description="Nx" className={styles["icon"]} />
+                        <Icon source="/assets/sass.png" description="Sass" className={styles["icon"]} />
                     </div>
                     <div className={styles["tools-text"]}>
                         <p>
