@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react";
 
-import Icon from "./icon";
+import { Icon } from "./icon";
 
 describe("Icon", () => {
     it("should render successfully", () => {
-        const { baseElement } = render(<Icon />);
+        const { baseElement } = render(<Icon source="/icon.svg" />);
         expect(baseElement).toBeTruthy();
     });
 });
